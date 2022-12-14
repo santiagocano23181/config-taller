@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: movie-service
+  profiles:
+    active: dev
+server:
+  servlet:
+    context-path: /cinema/api/v1
+  port: 9050
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9010/eureka
