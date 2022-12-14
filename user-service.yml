@@ -3,6 +3,12 @@ spring:
     name: user-service
   profiles:
     active: dev
+  boot:
+    admin:
+      client:
+        url: http://localhost:9020
+        instance:
+          name: User API Service
 server:
   servlet:
     context-path: /cinema/api/v1

@@ -3,6 +3,12 @@ spring:
     name: booking-service
   profiles:
     active: dev
+  boot:
+    admin:
+      client:
+        url: http://localhost:9020
+        instance:
+          name: Booking API Service
 server:
   servlet:
     context-path: /cinema/api/v1
