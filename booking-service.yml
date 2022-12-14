@@ -1,6 +1,6 @@
 spring:
   application:
-    name: shopping-service
+    name: booking-service
   profiles:
     active: dev
 server:
