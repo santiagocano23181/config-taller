@@ -17,6 +17,14 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:9010/eureka
+feign:
+  circuitbreaker:
+    enabled: true
+  client:
+    config:
+      default:
+        connectTimeout: 5000
+        readTimeout: 5000
 management:
   endpoints:
     web:
